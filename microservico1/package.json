@@ -1,0 +1,32 @@
+{
+  "name": "microservico1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "swagger-autogen": "node swagger.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^6.5.1",
+    "@sentry/tracing": "^6.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "kafkajs": "^1.15.0",
+    "pg": "^8.6.0",
+    "swagger-autogen": "^2.8.2",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.0.1",
+    "request": "^2.88.2",
+    "should": "^13.2.3"
+  }
+}
