@@ -35,6 +35,7 @@ describe('/POST products', () => {
       })
       .end((err, res) => {
         res.should.have.status(200);
+        console.log(res.body)
         res.body.should.have.property('ok').eql(true);
         res.body.data.should.be.a('object');
         done();
