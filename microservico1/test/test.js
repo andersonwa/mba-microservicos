@@ -26,7 +26,7 @@ describe('/POST products', () => {
     chai.request(server)
       .post('/api/products')
       .send({
-        "produto_id": "product4",
+        "produto_id": "product" + Math.floor(Math.random() * 10000) + 1,
         "nome": "teste 4", 
         "preco_lista": 10, 
         "preco_venda": 5, 
@@ -45,7 +45,7 @@ describe('/POST products', () => {
     chai.request(server)
       .post('/api/products')
       .send({
-        "produto_id": "product4",
+        "produto_id": "product" + Math.floor(Math.random() * 10000) + 1,
         "nome": "teste 4", 
         "preco_venda": 5, 
         "descricao": "teste 3", 
